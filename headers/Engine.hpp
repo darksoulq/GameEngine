@@ -13,19 +13,19 @@ public:
 
     bool Initialize();
     void SetUpdateFunction(const std::function<void()>& updateFunc);
+    void PollEvents();
+    void Update();
     void Start();
 
-    SceneManager* GetSceneManager(); // Accessor for SceneManager
+    SceneManager* GetSceneManager();
+    Window* GetWindow() const { return window; }  // Add this method
 
 private:
     Window* window;
     InputManager* inputManager;
     SceneManager* sceneManager;
-    bool isRunning;
     std::function<void()> updateFunction;
-
-    void PollEvents();
-    void Update();
+    bool isRunning;
 };
 
 #endif // ENGINE_HPP

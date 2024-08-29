@@ -15,6 +15,8 @@ bool Engine::Initialize() {
     }
 
     window = new Window("Game Engine", 800, 600);
+    window->SetResizable(true);
+    window->SetViewportAdjustment(true);
     if (!window->Initialize()) {
         return false;
     }

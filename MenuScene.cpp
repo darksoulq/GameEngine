@@ -49,6 +49,15 @@ void MenuScene::Update(InputManager* inputManager) {
 }
 
 void MenuScene::Render() {
+    int viewportWidth = engine->GetWindow()->GetWidth();
+    int viewportHeight = engine->GetWindow()->GetHeight();
+
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    glOrtho(0, viewportWidth, 0, viewportHeight, -1, 1);  // Orthographic projection
+
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
     if (shader) {
         shader->Use();
     }
