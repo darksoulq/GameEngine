@@ -14,7 +14,7 @@ You can install these libraries on a Debian-based system (e.g., Ubuntu) using th
 
 
     apt update
-    sudo apt install libglew-dev libsdl2-dev libgl1-mesa-dev libstb-dev
+    sudo apt install libsdl2-dev libglew-dev libsdl2-dev libgl1-mesa-dev libstb-dev
 
 Building the Project
 
