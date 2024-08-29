@@ -27,11 +27,12 @@ cd repository-directory
 
 CMake Configuration: Use the provided CMakeLists.txt file to configure and generate the build files.
 
-bash
+```bash
 
 mkdir build
 cd build
 cmake ..
+```
 
 Build the Project: Compile the project using make:
 
