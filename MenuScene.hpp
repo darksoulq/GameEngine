@@ -3,8 +3,9 @@
 
 #include "Engine.hpp"
 #include "Scene.hpp"
-#include "Texture.hpp"
+#include "InputManager.hpp"
 #include "Shader.hpp"
+#include "Texture.hpp"
 #include <iostream>
 
 class GameScene;  // Forward declaration

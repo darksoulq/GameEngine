@@ -330,5 +330,6 @@ CMakeFiles/GameEngine.dir/GameScene.cpp.o: \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
  /home/dark/Desktop/GameEngine/MenuScene.hpp \
- /home/dark/Desktop/GameEngine/headers/Texture.hpp \
- /home/dark/Desktop/GameEngine/headers/Shader.hpp
+ /home/dark/Desktop/GameEngine/headers/InputManager.hpp \
+ /home/dark/Desktop/GameEngine/headers/Shader.hpp \
+ /home/dark/Desktop/GameEngine/headers/Texture.hpp

@@ -16,9 +16,15 @@ bool Texture::LoadFromFile(const std::string& filePath) {
 
     if (!data) {
         std::cerr << "Error: Failed to load image. Reason: " << stbi_failure_reason() << std::endl;
+        
+        // Cleanup: delete the texture ID and unbind
+        glBindTexture(GL_TEXTURE_2D, 0);
+        glDeleteTextures(1, &ID);
+        
         return false;
     }
 
+    // Upload texture data to GPU
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
     glGenerateMipmap(GL_TEXTURE_2D); // Generate mipmaps
 
@@ -30,6 +36,10 @@ bool Texture::LoadFromFile(const std::string& filePath) {
 
     stbi_image_free(data);
     std::cout << "Texture loaded successfully!" << std::endl;
+    
+    // Unbind texture
+    glBindTexture(GL_TEXTURE_2D, 0);
+
     return true;
 }
 
@@ -38,5 +48,8 @@ void Texture::Bind() const {
 }
 
 void Texture::Cleanup() {
-    glDeleteTextures(1, &ID);
+    if (ID != 0) {
+        glDeleteTextures(1, &ID);
+        ID = 0;  // Mark as deleted
+    }
 }

@@ -1,9 +1,6 @@
 #include "MenuScene.hpp"
 #include "GameScene.hpp"
 #include "ResourceManager.hpp"
-#include "InputManager.hpp"
-#include "Texture.hpp"
-#include "Shader.hpp"
 #include <iostream>
 
 void MenuScene::Initialize() {
@@ -49,15 +46,6 @@ void MenuScene::Update(InputManager* inputManager) {
 }
 
 void MenuScene::Render() {
-    int viewportWidth = engine->GetWindow()->GetWidth();
-    int viewportHeight = engine->GetWindow()->GetHeight();
-
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
-    glOrtho(0, viewportWidth, 0, viewportHeight, -1, 1);  // Orthographic projection
-
-    glMatrixMode(GL_MODELVIEW);
-    glLoadIdentity();
     if (shader) {
         shader->Use();
     }

@@ -292,8 +292,9 @@ CMakeFiles/GameEngine.dir/main.cpp.o: \
  /usr/include/c++/13/bits/stl_tempbuf.h \
  /home/dark/Desktop/GameEngine/MenuScene.hpp \
  /home/dark/Desktop/GameEngine/headers/Scene.hpp \
- /home/dark/Desktop/GameEngine/headers/Texture.hpp \
+ /home/dark/Desktop/GameEngine/headers/InputManager.hpp \
  /home/dark/Desktop/GameEngine/headers/Shader.hpp \
+ /home/dark/Desktop/GameEngine/headers/Texture.hpp \
  /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
  /usr/include/c++/13/ios /usr/include/c++/13/exception \
  /usr/include/c++/13/bits/exception_ptr.h \

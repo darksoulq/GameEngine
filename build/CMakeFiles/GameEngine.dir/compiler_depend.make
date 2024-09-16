@@ -413,7 +413,6 @@ CMakeFiles/GameEngine.dir/MenuScene.cpp.o: /home/dark/Desktop/GameEngine/MenuSce
   /home/dark/Desktop/GameEngine/MenuScene.hpp \
   /home/dark/Desktop/GameEngine/headers/Engine.hpp \
   /home/dark/Desktop/GameEngine/headers/InputManager.hpp \
-  /home/dark/Desktop/GameEngine/headers/ResourceManager.hpp \
   /home/dark/Desktop/GameEngine/headers/Scene.hpp \
   /home/dark/Desktop/GameEngine/headers/SceneManager.hpp \
   /home/dark/Desktop/GameEngine/headers/Shader.hpp \
@@ -537,12 +536,9 @@ CMakeFiles/GameEngine.dir/MenuScene.cpp.o: /home/dark/Desktop/GameEngine/MenuSce
   /usr/include/c++/13/bits/stl_iterator.h \
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
-  /usr/include/c++/13/bits/stl_map.h \
-  /usr/include/c++/13/bits/stl_multimap.h \
   /usr/include/c++/13/bits/stl_pair.h \
   /usr/include/c++/13/bits/stl_stack.h \
   /usr/include/c++/13/bits/stl_tempbuf.h \
-  /usr/include/c++/13/bits/stl_tree.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
   /usr/include/c++/13/bits/stl_vector.h \
   /usr/include/c++/13/bits/streambuf.tcc \
@@ -583,7 +579,6 @@ CMakeFiles/GameEngine.dir/MenuScene.cpp.o: /home/dark/Desktop/GameEngine/MenuSce
   /usr/include/c++/13/iostream \
   /usr/include/c++/13/istream \
   /usr/include/c++/13/limits \
-  /usr/include/c++/13/map \
   /usr/include/c++/13/math.h \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
